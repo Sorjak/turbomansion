@@ -1,0 +1,15 @@
+{% extends "turbomansion/base.html" %}
+
+{% block content %}
+
+<h1>Turbo chromecast management</h1>
+
+
+<ul>
+{% for cast in casts %}
+    <li> {{ cast }} </li>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "turbomansion/base.html" %}
+
+{% block content %}
+
+<h1>Turbomansion Smart Home</h1>
+
+{{ request }}
+
+{% if username != "" %}
+
+<p>Welcome back, <a href="/accounts/profile">{{ username }}</a></p>
+
+{% else %}
+
+<p>Please <a href="/login">log in</a> to do anything.</p>
+
+{% endif %}
+
+
+
+{% endblock %}
